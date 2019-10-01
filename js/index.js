@@ -9,14 +9,22 @@ document.querySelectorAll(".nav-link").forEach(el => {
 });
 
 // Turns Fun Bus header blue on double click
-document.querySelectorAll(".logo-heading");
-funBus.addEventListener("dblclick", () => {
-    funBus.style.color="blue";
+const elem = document.querySelector(".logo-heading");
+elem.addEventListener("dblclick", () => {
+    elem.style.color = "blue";
 })
 
+// Changes Header image to Jerome Bettis
+const headerImg = document.querySelector(".intro img");
+window.addEventListener("resize", () => {
+    headerImg.src = "img/TheBus2.jpg";
+    console.log(headerImg);
+})
 
+// Changes Welcome to Fun Bus font-size to be bigger when right clicked
 
-// const headerImg = document.querySelector(".intro img");
-// headerImg.addEventListener("resize", () => {
-//     headerImg.src = "img/The-Bus2.jpg";
-// })
+const click = document.querySelector(".intro h2");
+click.addEventListener("contextmenu", () => {
+    click.style.fontSize = "6rem";
+})
+
