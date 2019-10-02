@@ -44,7 +44,17 @@ underl.addEventListener("mouseleave", () => {
 
 //keyup
 
+const key1 = document.querySelector("body");
+key1.addEventListener("keyup", () => {
+    key1.style.background = "purple";
+})
+
 //keydown
+
+const key2 = document.querySelector("body");
+key2.addEventListener("keydown", () => {
+    key2.style.background = "cyan";
+})
 
 //click
 
