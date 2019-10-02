@@ -28,3 +28,24 @@ click.addEventListener("contextmenu", () => {
     click.style.fontSize = "6rem";
 })
 
+//mouseenter style.textShadow
+
+const shadow = document.querySelector(".content-section h2");
+shadow.addEventListener("mouseenter", () => {
+    shadow.style.textShadow = "5px 2px 2px";
+})
+
+//mouseleave
+
+const underl = document.querySelector(".content-destination h2");
+underl.addEventListener("mouseleave", () => {
+    underl.style.textDecorationLine = "underline";
+})
+
+//keyup
+
+//keydown
+
+//click
+
+//scroll
